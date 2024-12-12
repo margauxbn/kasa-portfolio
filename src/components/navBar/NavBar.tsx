@@ -1,5 +1,6 @@
 import "./navBar.scss";
 import { Link, NavLink } from "react-router-dom";
+import logoNavbar from "../../assets/logo.jpg"
 
 function NavBar() {
   
@@ -8,7 +9,7 @@ function NavBar() {
         <nav>
           
           <Link to="/" className="navbar-logo">
-            <img src="../public/logo.jpg" alt="Logo Kasa"/>        
+            <img src={logoNavbar} alt="Logo Kasa"/>        
           </Link>
 
           <div className="navbar-list">
