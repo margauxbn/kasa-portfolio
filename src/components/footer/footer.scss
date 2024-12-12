@@ -1,0 +1,28 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+    .footer-logo {
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .footer-text {
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 500;
+        color: #FFF;
+        margin-top: 25px;
+    }
+
+    @media screen and (max-width: 844px) {
+        .footer-text {
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+    }
+}

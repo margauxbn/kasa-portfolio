@@ -1,0 +1,72 @@
+.collapse-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .collapse-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #FF6060;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+      h2 {
+        padding-left: 15px;
+        margin-right: auto;
+        margin-block: 8px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFF; 
+      }
+  }
+}
+
+  .collapse-title .fa-chevron-down {
+    margin-right: 25px;
+    color: #FFF;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .collapse-title .fa-chevron-down.rotate {
+    transform: rotate(-180deg);
+  }
+
+  .collapse-paragraph {
+    margin-inline: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .collapse-paragraph.show {
+    max-height: 200px;
+  }
+
+  @media screen and (max-width: 844px) {
+    .collapse-block {
+      .collapse-title {
+        h2 {
+          font-size: 13px;
+        }
+      }
+      
+      .collapse-paragraph {
+        font-size: 12px;
+      }
+    }
+} 
+
