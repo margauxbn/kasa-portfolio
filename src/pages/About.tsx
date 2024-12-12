@@ -1,13 +1,14 @@
 import Banner from "../components/banner/Banner.tsx";
 import Collapse from "../components/collapse/Collapse.tsx";
 import "./about.scss"
+import bannerAbout from "../assets/about_banner.jpg"
 
 function About() {
   
   return (
     <>
         <div className="about-banner">
-            <Banner imageUrl="/public/about_banner.jpg" bannerHome="" />
+            <Banner imageUrl={bannerAbout} bannerHome="" />
         </div>
         <div className="about-collapse">
             <Collapse titleCollapse="Fiabilité" paragraphCollapse="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
